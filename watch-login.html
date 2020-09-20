@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <title>Sikudang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  </head>
+
+<body>
+    <div id="app"
+    class="mx-auto bg-light p-3"
+    style="width: 350px;">
+    <h2>Form Login</h2>
+        <input type="password" v-model="isi" placeholder="type password" class="form-control mb1">
+        <input type="password" v-model="isi2" placeholder="re-type password" class="form-control mb1">
+        <p v-html ="keterangan"></p>
+        <input type="submit" value="SignUp" v-if="tampil" class="btn btn-primary btn-block">      
+    </div>
+    
+    <script src="vue.min.js"></script>
+	<script src="apps.js"></script>
+</body>
+</html>

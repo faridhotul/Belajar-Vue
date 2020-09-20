@@ -11,17 +11,13 @@
   </head>
 
 <body>
-	<div id="app">
-       <h3>Hasil perhitungan dari bilangan {{a}} dan {{b}} : </h3>
-       <br>
-       <button v-on:click='diproses'>proses</button> <br>
-       penjumlahan: {{jumlah}} <br>
-       pengurangan: {{kurang}} <br>
-        perkalian: {{kali}} <br>
-        pembagian: {{bagi}} <br>
-	</div>
-
-	<script src="vue.min.js"></script>
+    <div id="app">
+       <textarea type="text" v-model="pesan" placeholder="ketik pesan disini"></textarea>
+       <br> Pesan anda adalah : <br>
+       <p style="white-space: pre-line;">{{pesan}}</p>
+    </div>
+    
+    <script src="vue.min.js"></script>
 	<script src="apps.js"></script>
 </body>
 </html>
