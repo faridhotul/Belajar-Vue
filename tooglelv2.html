@@ -12,7 +12,8 @@
 
 <body>
     <div id="app">
-        <img :src="imageSrc">
+        <button :key="isEditing" @click='isEditing=!isEditing'>{{isEditing?'save' :'edit'}}</button>
+        
     </div>
     
     <script src="vue.min.js"></script>

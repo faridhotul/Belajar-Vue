@@ -1,8 +1,19 @@
 var app = new Vue ({
     el:'#app',
     data: {
-        imageSrc :'me.jpg',
+        isi:'',
+        kendaraan: ['mobil','motor','sepeda']
+    },
+    methods:{
+        tambah: function(){
+            this.kendaraan.push(this.isi)
+            this.isi=''
+        },
+        hapus(index){
+            this.kendaraan.splice(index,1)
+        }
     }
+        
 
     
     /*data:{
@@ -100,6 +111,18 @@ var app = new Vue ({
 
         }
     }
+}*/
+
+// eventhandler tombol lain
+/*methods:{
+    enter : function() {this.hasil = 'Tombol Enter'},
+    esc : function() {this.hasil = 'Tombol Escape'},
+    space : function() {this.hasil = 'Tombol Spasi'},
+    up : function() {this.hasil = 'Tombol panah atas'},
+    down : function() {this.hasil = 'Tombol panah bawah'},
+    right : function() {this.hasil = 'Tombol panah kanan'},
+    left : function() {this.hasil = 'Tombol panah kiri'}
+
 }*/
   
 });

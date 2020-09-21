@@ -12,7 +12,9 @@
 
 <body>
     <div id="app">
-        <img :src="imageSrc">
+        <ul>
+            <li v-for="kd in kendaraan">{{kd}}</li>
+        </ul>
     </div>
     
     <script src="vue.min.js"></script>

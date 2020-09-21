@@ -12,7 +12,16 @@
 
 <body>
     <div id="app">
-        <img :src="imageSrc">
+        <input type="text"
+        @keyup.enter='enter'
+        @keyup.esc='esc'
+        @keyup.space='space'
+        @keyup.up='up'
+        @keyup.down='down'
+        @keyup.right='right'
+        @keyup.left='left'
+        >
+        {{hasil}}
     </div>
     
     <script src="vue.min.js"></script>

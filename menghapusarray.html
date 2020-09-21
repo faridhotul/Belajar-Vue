@@ -12,7 +12,15 @@
 
 <body>
     <div id="app">
-        <img :src="imageSrc">
+        <input type="text" v-model="isi">
+        <button @click="tambah"> Tambah Data </button>
+        <ul>
+            <li v-for="(kd, index) in kendaraan">
+            <button @click='hapus(index)'>x</button>
+            {{kd}}
+            </li>
+            
+        </ul>
     </div>
     
     <script src="vue.min.js"></script>

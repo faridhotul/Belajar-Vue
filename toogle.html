@@ -12,7 +12,8 @@
 
 <body>
     <div id="app">
-        <img :src="imageSrc">
+        <button @click='tampak=!tampak'>Toogle</button>
+        <b v-show='tampak'>tulisan yang ditampilkan</b>
     </div>
     
     <script src="vue.min.js"></script>
